@@ -1,5 +1,4 @@
 import { ParsedArgs } from 'minimist';
-import { isArray, isString } from 'util';
 import { toJson } from 'xml2json';
 import { CoberturaJson } from './types/cobertura';
 import * as fs from 'fs';
