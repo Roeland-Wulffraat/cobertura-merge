@@ -37,7 +37,7 @@ export function validateArgs(args: ParsedArgs): void {
     process.exit(1);
   }
 
-  if (args._.length < 3 || args.o === true || isArray(args.o) || isString(args.p) || isArray(args.p)) {
+  if (args._.length < 3 || args.o === true || Array.isArray(args.o) || typeof args.p === "string" || Array.isArray(args.p)) {
     // Input error
     printHelp();
   }
